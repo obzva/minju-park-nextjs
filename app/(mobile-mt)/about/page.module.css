@@ -1,0 +1,14 @@
+.external-link {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-color: gray;
+  transition: text-decoration-color 200ms ease-out;
+
+  &:hover {
+    text-decoration-color: black;
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+}

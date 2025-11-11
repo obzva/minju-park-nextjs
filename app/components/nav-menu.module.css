@@ -1,0 +1,55 @@
+.knob {
+  animation: spin 2s linear;
+  animation-iteration-count: infinite;
+}
+
+.knob-inner {
+  transition: transform 300ms ease-in-out, background-color 200ms ease-out;
+}
+
+.knob-inner-bar {
+  transition: background-color 200ms ease-out;
+}
+
+.wrapper[data-current="false"] {
+  & .knob {
+    animation-play-state: paused;
+  }
+
+  &:hover .knob-inner {
+    transform: rotate(270deg);
+    background-color: var(--knob-inner-color);
+  }
+
+  &:hover .knob-inner-bar {
+    background-color: var(--knob-inner-bar-color);
+  }
+}
+
+.wrapper[data-current="true"] {
+  & .knob {
+    animation-play-state: running;
+  }
+
+  &:hover .knob {
+    animation-play-state: paused;
+  }
+}
+
+.wrapper:active {
+  transform: scale(0.97);
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .knob,
+  .knob-inner {
+    transform: none;
+    animation: none;
+  }
+}
