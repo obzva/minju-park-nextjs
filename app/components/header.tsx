@@ -41,12 +41,7 @@ export default function Header() {
             text="publications"
             knobColor="te-ochre"
           />
-          <NavMenu
-            href="https://minju-park-website.s3.ca-west-1.amazonaws.com/docs/cv.pdf"
-            text="cv"
-            knobColor="te-orange"
-            isAnchor
-          />
+          <NavMenu href="/cv.pdf" text="cv" knobColor="te-orange" />
         </nav>
       </div>
     </header>
