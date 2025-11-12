@@ -3,7 +3,7 @@ import Artwall from "./components/art-wall";
 export default function Home() {
   return (
     <section>
-      <div className="sm:hidden mt-12">
+      <div className="sm:hidden">
         <Artwall row={4} col={3} />
       </div>
       <div className="hidden sm:block lg:hidden mt-6 lg:mt-0">

@@ -60,7 +60,7 @@ export default function RootLayout({
       <body className="w-screen flex justify-center">
         <div className="w-full max-w-160 lg:max-w-5xl min-h-screen flex flex-col items-center px-4">
           <Header />
-          <div className="flex-1 w-full">{children}</div>
+          <div className="flex-1 w-full mt-8 mb-16 sm:my-0">{children}</div>
           <Footer />
         </div>
       </body>
