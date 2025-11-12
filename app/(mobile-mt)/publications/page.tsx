@@ -1,5 +1,10 @@
 import { Fragment } from "react";
 import styles from "./page.module.css";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Publications",
+};
 
 export default function Publications() {
   return (
