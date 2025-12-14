@@ -9,7 +9,7 @@ import { CSSProperties, ReactNode } from "react";
 type Props = {
   href: string;
   text: string;
-  knobColor: "te-blue" | "te-ochre" | "te-orange";
+  knobColor: "te-blue" | "te-ochre" | "te-orange" | "te-green";
 };
 
 const bgColorClassNames = {
@@ -17,12 +17,14 @@ const bgColorClassNames = {
   "te-blue": "bg-te-blue",
   "te-ochre": "bg-te-ochre",
   "te-orange": "bg-te-orange",
+  "te-green": "bg-te-green",
 } as const;
 
 const knobColorValues = {
   "te-blue": "var(--color-te-blue)",
   "te-ochre": "var(--color-te-ochre)",
   "te-orange": "var(--color-te-orange)",
+  "te-green": "var(--color-te-green)",
 } as const;
 
 export default function NavMenu({ href, text, knobColor }: Props) {
@@ -32,7 +34,7 @@ export default function NavMenu({ href, text, knobColor }: Props) {
     <Link href={href}>
       <div
         className={clsx(
-          "flex items-center w-fit gap-2 px-2 sm:px-4 cursor-pointer relative",
+          "flex items-center w-fit gap-2 px-2 sm:px-0 lg:px-4 cursor-pointer relative",
           styles.wrapper
         )}
         style={
