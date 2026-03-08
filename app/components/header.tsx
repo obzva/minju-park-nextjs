@@ -26,7 +26,7 @@ export default function Header() {
               <LinkedIn width={32} />
             </a>
             <a
-              href="https://scholar.google.com/citations?user=jmyYM3EAAAAJ&hl=ko&authuser=1"
+              href="https://scholar.google.com/citations?user=WTU0OT4AAAAJ&hl=en"
               target="_blank"
               rel="noreferrer"
             >

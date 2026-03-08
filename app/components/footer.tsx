@@ -24,7 +24,7 @@ export default function Footer() {
         </div>
         <div className="w-12 h-12 flex items-center justify-center">
           <a
-            href="https://scholar.google.com/citations?user=jmyYM3EAAAAJ&hl=ko&authuser=1"
+            href="https://scholar.google.com/citations?user=WTU0OT4AAAAJ&hl=en"
             target="_blank"
             rel="noreferrer"
             className={styles.clickable}
