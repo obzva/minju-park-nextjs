@@ -46,6 +46,17 @@ export default function Publications() {
 
 const pubs = [
   {
+    title: "AI Twin: Enhancing ESL Speaking Practice through AI Self-Clones of a Better Me",
+    authors: [
+      "Minju Park",
+      "Seunghyun Lee",
+      "Juhwan Ma",
+      "Dongwook Yoon",
+    ],
+    conf: "CHI 2026",
+    pdfURL: "https://arxiv.org/pdf/2601.11103",
+  },
+  {
     title: "BIPED: Pedagogically Informed Tutoring System for ESL Education",
     authors: [
       "Soonwoo Kwon",
